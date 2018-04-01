@@ -2,7 +2,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width,hight=device-hight,minimum-scale=1.0,maximum-scale=1.0,ser-scalable=none"/>
-<title>滑稽</title>
+<title>娜娜愚人节快乐！</title>
 
 <style type="text/css">
 body { margin: 0; padding: 0; position: relative; background-image: url(skin/images/xh.jpg); background-position: center; /*background-repeat: no-repeat;*/ width: 100%; height: 100%; background-size: 100% 100%; }
@@ -18,7 +18,7 @@ body { margin: 0; padding: 0; position: relative; background-image: url(skin/ima
 </style>
 
 </head>
-<body id="body" onLoad="init()">
+<body id="body" onLoad="init()" >
     
 <script type="text/javascript" src="skin/js/threecanvas.js"></script>
 <script type="text/javascript" src="skin/js/snow.js"></script>
@@ -81,6 +81,8 @@ body { margin: 0; padding: 0; position: relative; background-image: url(skin/ima
 		document.addEventListener( 'touchend', onDocumentTouchEnd, false );
 		
 		setInterval( loop, 1000 / 60 );
+
+        document.getElementById("body").click();
 		
 	}
 
@@ -91,6 +93,7 @@ body { margin: 0; padding: 0; position: relative; background-image: url(skin/ima
 	//var touchEndX;
 	//var touchEndY;
 	function onDocumentTouchStart( event ) {
+
 
 		if ( event.touches.length == 1 ) {
 
@@ -178,6 +181,7 @@ body { margin: 0; padding: 0; position: relative; background-image: url(skin/ima
 
 		renderer.render( scene, camera );
 	}
+
 </script>
 
 
